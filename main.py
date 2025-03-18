@@ -134,7 +134,7 @@ def checker():
     
     timestamp = int(datetime.now().timestamp())
     result_file = f"checked_{timestamp}.txt"
-    result_path = os.path.join("downloads", result_file)
+    result_path = os.path.join("checker", result_file)
     with open(result_path, 'w') as f:
         f.write("\n".join(output))
     print(Fore.GREEN + f"\nAll results saved to {result_path}\n")
